@@ -8,25 +8,18 @@
 </head>
 
 <body>
-    <script>
-        console.log('window.location.host', window.location.host)
-        console.log('window.location.includes (stuff)', window.location.host.includes('github.io'))
-        if (window.location.host.includes('github.io'))
-        {
-            document.write()
-        }
-        else
-        {
-
-        }
-    </script>
     <main>
         <h1>Iffy</h1>
-        <div>
-            <img alt="image displayed because not github pages" src="https://picsum.photos/id/343/200/300">
-            <p></p>
-            <img alt="image displayed because ON github pages" src="https://picsum.photos/id/200/200/300 ">
-        </div>
+        <script>
+            console.log('window.location.host', window.location.host)
+            console.log('window.location.includes (stuff)', window.location.host.includes('github.io'))
+            if (window.location.host.includes('github.io')) {
+                document.write('<img alt="image displayed because ON github pages" src="https://picsum.photos/id/200/200/300 ">')
+            }
+            else {
+                document.write('<img alt="image displayed because not github pages" src="https://picsum.photos/id/343/200/300">')
+            }
+        </script>
     </main>
 </body>
 
