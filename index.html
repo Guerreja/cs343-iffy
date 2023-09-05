@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>CS 343 - Iffy</title>
     <link rel="icon" href="https://fav.farm/🔥">
     <meta charset="UTF-8">
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Iffy</h1>
-        <script>
-            console.log('window.location.host', window.location.host)
-            console.log('window.location.includes (stuff)', window.location.host.includes('github.io'))
-            if (window.location.host.includes('github.io')) {
-                document.write('<img alt="image displayed because ON github pages" src="https://picsum.photos/id/200/200/300 ">')
-            }
-            else {
-                document.write('<img alt="image displayed because not github pages" src="https://picsum.photos/id/343/200/300">')
-            }
-        </script>
+      <h1>Iffy</h1>
+      <script>
+        console.log("window.location.host", window.location.host);
+        console.log(
+          "window.location.includes (stuff)",
+          window.location.host.includes("github.io")
+        );
+        if (window.location.host.includes("github.io")) {
+          document.write(
+            '<img alt="image displayed because ON github pages" src="https://picsum.photos/id/200/200/300 ">'
+          );
+        } else {
+          document.write(
+            '<img alt="image displayed because not github pages" src="https://picsum.photos/id/343/200/300">'
+          );
+        }
+      </script>
     </main>
-</body>
-
+  </body>
 </html>
